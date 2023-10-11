@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            background-color: rgb(38, 89, 89);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(23, 25, 34);
+        }
+
+        nav ol {
+            display: flex;
+            justify-content: center;
+
+        }
+        .contact{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            margin: 30px 30px;
+            font-size: 10px;
+            color: black;
+        }
+        .right{
+            display: flex;
+            justify-content: space-around;
+            margin: 110px 0;
+            align-items: center;
+        }
+        /* Style for the Contact Form */
+/* Style for the Contact Form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+</style>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <!-- Add your logo or website name here -->
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                
+                <!-- Add other navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section >
+            <h2>Contact Information</h2>
+            <div class="right">
+            <p>You can get in touch with me through the following means:</p>
+            <ul>
+                <li>Email: <a href="mailto: xyz@.com">@swatiinigam.com</a></li>
+                <li>Phone: [123456789]</li>
+                <!-- Add other contact information as needed -->
+            </ul>
+        </div>
+        </section>
+
+        <section>
+            <h2>Contact Form</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Include footer information here -->
+    </footer>
+</body>
+
+</html>
